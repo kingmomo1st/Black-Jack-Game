@@ -1,0 +1,99 @@
+body {
+    background-image: url('../images/blackjack-table.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    background-color: #000;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    height: 85vh;
+    background-color: transparent;
+    /* border: 8px dashed orange; */
+}
+
+/* 
+#dealer-cards-div, #player-cards-div {
+    border: 5px dashed aqua;
+} 
+
+#dealer-score-span, #player-score-span {
+    border: 4px dashed pink;
+}
+*/
+
+img {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+    transform: perspective(80px) rotateX(10deg);   
+}
+
+/* permanent properties of buttons regardless 
+of whether they are enabled or disabled */
+button {
+    width: 100px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;    
+    margin: 1rem 0 0 1rem;
+    color: white;
+    background-color: #464;
+}
+
+.enabled-btn {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.enabled-btn:hover {
+    background-color: #494;
+}
+
+/* disabled button overrides 2 props of enabled: opacity and cursor */
+.disabled-btn {
+    opacity: 0.4;
+    cursor: none;
+}
+
+.disabled-btn:hover {
+    background-color: #464;
+}
+
+div {
+    padding: 1.5rem;
+    min-width: 50%;
+    height: 225px;
+    margin: 1rem;
+    border-radius: 1.5rem;
+}
+
+div image {
+    height: 90%; 
+}
+
+span {
+    color: white;
+    width: 300px;
+    padding: 0.65rem;
+    font-family: sans-serif;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h2 {
+    /* border: 5px dashed purple; */
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
